@@ -1,10 +1,10 @@
 - hosts: all
   tasks:
      - name: stop container
-       shell:  docker container stop webcontainer                    #name of container 
+       shell:  docker container stop webcon                    #name of container 
      - name: remove container
-       shell: docker container rm webcontainer
+       shell: docker container rm webcont
      - name: remove docker image
-       shell: docker image rm akhilesh48455/webproject                       #name of images (docker images)
+       shell: docker image rm akhilesh48455/webprojectnew                       #name of images (docker images)
      - name: create new container
-       shell: docker container run -itd --name webcontainer -p 9000:80 akhilesh48455/webproject     #(docker-job>> name of jenkins job)
+       shell: docker container run -itd --name webcon -p 9000:80 akhilesh48455/webprojectnew   #(docker-job>> name of jenkins job)
