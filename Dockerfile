@@ -14,7 +14,7 @@ RUN rm -rf photogenic photogenic.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
  
- 
+#######################NEW 
 # FROM  centos:latest
 # MAINTAINER trainings.anil@gmail.com
 # RUN yum install -y httpd \
